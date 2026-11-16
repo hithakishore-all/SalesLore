@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.keys/
+salesforce/exports/
+db/sql/06_sync.sql
+*.log
+.DS_Store
+coverage/

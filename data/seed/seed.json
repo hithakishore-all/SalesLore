@@ -1,0 +1,954 @@
+{
+  "config": {
+    "demo_today": "2026-11-16",
+    "stale_after_days": 90,
+    "max_validate_retries": 2
+  },
+  "sellers": [
+    {
+      "seller_id": "maya",
+      "name": "Maya Okafor",
+      "role": "Enterprise AE",
+      "email": "maya.okafor@kestrel.example",
+      "consent_status": "granted",
+      "consent_date": "2026-10-28",
+      "last_day": "2026-11-27"
+    },
+    {
+      "seller_id": "leo",
+      "name": "Leo Brandt",
+      "role": "Successor AE",
+      "email": "leo.brandt@kestrel.example",
+      "consent_status": "not_required",
+      "consent_date": null,
+      "last_day": null
+    },
+    {
+      "seller_id": "dana",
+      "name": "Dana Whitfield",
+      "role": "Sales manager",
+      "email": "dana.whitfield@kestrel.example",
+      "consent_status": "not_required",
+      "consent_date": null,
+      "last_day": null
+    }
+  ],
+  "transfer": {
+    "transfer_id": "TR-001",
+    "from_seller": "maya",
+    "to_seller": "leo",
+    "owner": "dana",
+    "started_on": "2026-11-10",
+    "status": "in_progress"
+  },
+  "accounts": [
+    {
+      "account_id": "halcyon",
+      "name": "Halcyon Freight",
+      "segment": "Enterprise",
+      "industry": "Logistics",
+      "state_code": "IL",
+      "stage": "Negotiation",
+      "amount": 480000,
+      "close_date": "2026-12-19",
+      "budget_status": "requested",
+      "do_not_contact_until": null,
+      "proves": "Hero run: real buyer, open promise, pattern step applied"
+    },
+    {
+      "account_id": "brightwater",
+      "name": "Brightwater Health",
+      "segment": "Enterprise",
+      "industry": "Healthcare",
+      "state_code": "OR",
+      "stage": "Proposal",
+      "amount": 210000,
+      "close_date": "2027-01-29",
+      "budget_status": "requested",
+      "do_not_contact_until": null,
+      "proves": "Validator catches an unsupported claim"
+    },
+    {
+      "account_id": "orchard",
+      "name": "Orchard Lane Retail",
+      "segment": "Mid-market",
+      "industry": "Retail",
+      "state_code": "GA",
+      "stage": "Evaluation",
+      "amount": 96000,
+      "close_date": "2027-02-26",
+      "budget_status": "unknown",
+      "do_not_contact_until": null,
+      "proves": "Stale data flagged with a re-verify step"
+    },
+    {
+      "account_id": "pinecrest",
+      "name": "Pinecrest Bank",
+      "segment": "Enterprise",
+      "industry": "Banking",
+      "state_code": "NC",
+      "stage": "Renewal",
+      "amount": 350000,
+      "close_date": "2027-03-31",
+      "budget_status": "confirmed",
+      "do_not_contact_until": "2027-01-15",
+      "proves": "Stops and escalates on a do-not-contact signal"
+    },
+    {
+      "account_id": "lumen",
+      "name": "Lumen Robotics",
+      "segment": "Mid-market",
+      "industry": "Manufacturing",
+      "state_code": "MI",
+      "stage": "Renewal",
+      "amount": 120000,
+      "close_date": "2026-12-31",
+      "budget_status": "confirmed",
+      "do_not_contact_until": null,
+      "proves": "Clean run, no warnings"
+    },
+    {
+      "account_id": "tidewater",
+      "name": "Tidewater Logistics",
+      "segment": "Mid-market",
+      "industry": "Logistics",
+      "state_code": "SC",
+      "stage": "Discovery",
+      "amount": 75000,
+      "close_date": null,
+      "budget_status": "unknown",
+      "do_not_contact_until": null,
+      "proves": "Missing data shown as unknown"
+    },
+    {
+      "account_id": "marlow",
+      "name": "Marlow Insurance",
+      "segment": "Enterprise",
+      "industry": "Insurance",
+      "state_code": "CT",
+      "stage": "Proposal",
+      "amount": 260000,
+      "close_date": "2027-04-30",
+      "budget_status": "requested",
+      "do_not_contact_until": null,
+      "proves": "Conflicting evidence shown side by side"
+    },
+    {
+      "account_id": "sable",
+      "name": "Sable Energy",
+      "segment": "Enterprise",
+      "industry": "Energy",
+      "state_code": "TX",
+      "stage": "Negotiation",
+      "amount": 310000,
+      "close_date": "2027-01-15",
+      "budget_status": "confirmed",
+      "do_not_contact_until": null,
+      "proves": "Privacy filter drops a personal fact"
+    },
+    {
+      "account_id": "juniper",
+      "name": "Juniper Schools",
+      "segment": "SMB",
+      "industry": "Education",
+      "state_code": "CO",
+      "stage": "Proposal",
+      "amount": 4800,
+      "close_date": "2026-12-12",
+      "budget_status": "confirmed",
+      "do_not_contact_until": null,
+      "proves": "Pattern step shown only where it applies"
+    },
+    {
+      "account_id": "corvid",
+      "name": "Corvid Analytics",
+      "segment": "Mid-market",
+      "industry": "Software",
+      "state_code": "WA",
+      "stage": "Negotiation",
+      "amount": 88000,
+      "close_date": "2026-12-22",
+      "budget_status": "requested",
+      "do_not_contact_until": null,
+      "proves": "Rejected pattern steps are never coached"
+    }
+  ],
+  "contacts": [
+    {
+      "contact_id": "C-001",
+      "account_id": "halcyon",
+      "name": "Priya Nair",
+      "title": "CFO",
+      "email": "priya.nair@halcyon.example",
+      "relationship": "decides_for",
+      "note": "Signs anything over $250K; wants cost per shipment",
+      "evidence_id": "EV-CALL-0412",
+      "last_touch": "2026-09-18",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-002",
+      "account_id": "halcyon",
+      "name": "Tom Reyes",
+      "title": "VP IT",
+      "email": "tom.reyes@halcyon.example",
+      "relationship": "champion_of",
+      "note": "Runs the evaluation; not the buyer",
+      "evidence_id": "EV-EML-0201",
+      "last_touch": "2026-10-21",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-003",
+      "account_id": "halcyon",
+      "name": "Ana Cole",
+      "title": "Security lead",
+      "email": "ana.cole@halcyon.example",
+      "relationship": "blocks",
+      "note": "Owns the open security questionnaire",
+      "evidence_id": "EV-CRM-0057",
+      "last_touch": "2026-11-03",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-004",
+      "account_id": "brightwater",
+      "name": "Lena Ortiz",
+      "title": "Director Clinical Ops",
+      "email": "lena.ortiz@brightwater.example",
+      "relationship": "champion_of",
+      "note": "Pain is scheduling handoffs between clinics",
+      "evidence_id": "EV-CALL-0365",
+      "last_touch": "2026-10-30",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-005",
+      "account_id": "orchard",
+      "name": "Marcus Bell",
+      "title": "Head of eCommerce",
+      "email": "marcus.bell@orchard.example",
+      "relationship": "champion_of",
+      "note": "Last touch 140 days ago; email now bounces",
+      "evidence_id": "EV-CRM-0102",
+      "last_touch": "2026-06-29",
+      "email_status": "bounced"
+    },
+    {
+      "contact_id": "C-006",
+      "account_id": "pinecrest",
+      "name": "Grace Whitman",
+      "title": "Procurement",
+      "email": "grace.whitman@pinecrest.example",
+      "relationship": "influences",
+      "note": "Asked to pause all vendor outreach",
+      "evidence_id": "EV-EML-0422",
+      "last_touch": "2026-11-02",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-007",
+      "account_id": "lumen",
+      "name": "Jae Park",
+      "title": "VP Operations",
+      "email": "jae.park@lumen.example",
+      "relationship": "decides_for",
+      "note": "Will renew if the QBR shows uptime",
+      "evidence_id": "EV-CALL-0388",
+      "last_touch": "2026-10-28",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-008",
+      "account_id": "marlow",
+      "name": "Karen Liu",
+      "title": "Head of Claims Ops",
+      "email": "karen.liu@marlow.example",
+      "relationship": "decides_for",
+      "note": "Budget owner",
+      "evidence_id": "EV-EML-0277",
+      "last_touch": "2026-10-15",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-009",
+      "account_id": "sable",
+      "name": "Omar Haddad",
+      "title": "VP Grid Ops",
+      "email": "omar.haddad@sable.example",
+      "relationship": "decides_for",
+      "note": "Needs go-live before the spring maintenance window",
+      "evidence_id": "EV-CALL-0470",
+      "last_touch": "2026-11-05",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-010",
+      "account_id": "juniper",
+      "name": "Ruth Adeyemi",
+      "title": "Principal",
+      "email": "ruth.adeyemi@juniper.example",
+      "relationship": "decides_for",
+      "note": "Two users: herself and the office manager",
+      "evidence_id": "EV-CALL-0402",
+      "last_touch": "2026-10-09",
+      "email_status": "ok"
+    },
+    {
+      "contact_id": "C-011",
+      "account_id": "corvid",
+      "name": "Sam Ito",
+      "title": "CFO",
+      "email": "sam.ito@corvid.example",
+      "relationship": "decides_for",
+      "note": "Open to price talk for a two-year term",
+      "evidence_id": "EV-CALL-0433",
+      "last_touch": "2026-10-29",
+      "email_status": "ok"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV-CALL-0412",
+      "account_id": "halcyon",
+      "source_system": "call",
+      "source_date": "2026-09-18",
+      "speaker": "Priya Nair, CFO",
+      "text": "Tom runs the evaluation, but I sign anything over $250K. Show me cost per shipment.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0201",
+      "account_id": "halcyon",
+      "source_system": "email",
+      "source_date": "2026-10-02",
+      "speaker": "Tom Reyes, VP IT",
+      "text": "I'll champion this internally. Final call is Priya's.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CRM-0057",
+      "account_id": "halcyon",
+      "source_system": "salesforce",
+      "source_date": "2026-11-03",
+      "speaker": "Opportunity field Security_Review__c",
+      "text": "Open: questionnaire items 7 and 12 pending with Ana Cole.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0193",
+      "account_id": "halcyon",
+      "source_system": "email",
+      "source_date": "2026-10-21",
+      "speaker": "Maya Okafor to Tom Reyes",
+      "text": "Confirming we'll extend your pilot by 30 days, through Nov 30.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0365",
+      "account_id": "brightwater",
+      "source_system": "call",
+      "source_date": "2026-10-08",
+      "speaker": "Dr. Lena Ortiz, Director Clinical Ops",
+      "text": "Our real pain is scheduling handoffs between clinics.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0310",
+      "account_id": "brightwater",
+      "source_system": "email",
+      "source_date": "2026-10-30",
+      "speaker": "Dr. Lena Ortiz",
+      "text": "I've submitted the budget request to finance. Review usually takes two to three weeks.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CRM-0102",
+      "account_id": "orchard",
+      "source_system": "salesforce",
+      "source_date": "2026-06-29",
+      "speaker": "Last activity with Marcus Bell",
+      "text": "Demo follow-up sent. No reply logged since.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0118",
+      "account_id": "orchard",
+      "source_system": "email",
+      "source_date": "2026-11-04",
+      "speaker": "Mail delivery system",
+      "text": "Delivery failed: marcus.bell@orchardlane.example, mailbox not found.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0422",
+      "account_id": "pinecrest",
+      "source_system": "email",
+      "source_date": "2026-11-02",
+      "speaker": "Grace Whitman, Procurement",
+      "text": "Please pause all vendor outreach until our audit closes on Jan 15.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CRM-0140",
+      "account_id": "pinecrest",
+      "source_system": "salesforce",
+      "source_date": "2026-11-02",
+      "speaker": "Account field Do_Not_Contact__c",
+      "text": "true, until 2027-01-15",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0388",
+      "account_id": "lumen",
+      "source_system": "call",
+      "source_date": "2026-10-27",
+      "speaker": "Jae Park, VP Operations",
+      "text": "Usage is up. I'll sign the renewal if the QBR shows the uptime numbers.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0350",
+      "account_id": "lumen",
+      "source_system": "email",
+      "source_date": "2026-10-28",
+      "speaker": "Maya Okafor to Jae Park",
+      "text": "I'll send the QBR deck by Dec 1.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CRM-0211",
+      "account_id": "lumen",
+      "source_system": "salesforce",
+      "source_date": "2026-11-10",
+      "speaker": "Usage snapshot",
+      "text": "92% of licensed seats active in the last 30 days.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CRM-0230",
+      "account_id": "tidewater",
+      "source_system": "salesforce",
+      "source_date": "2026-09-15",
+      "speaker": "Opportunity notes",
+      "text": "Inbound. Wants a routing demo.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-EML-0277",
+      "account_id": "marlow",
+      "source_system": "email",
+      "source_date": "2026-09-12",
+      "speaker": "Karen Liu, Head of Claims Ops",
+      "text": "Budget for this lands in Q1.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0451",
+      "account_id": "marlow",
+      "source_system": "call",
+      "source_date": "2026-10-15",
+      "speaker": "Karen Liu",
+      "text": "Realistically we're looking at Q2 funds now.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0470",
+      "account_id": "sable",
+      "source_system": "call",
+      "source_date": "2026-10-20",
+      "speaker": "Omar Haddad, VP Grid Ops",
+      "text": "We need this live before the spring maintenance window.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0471",
+      "account_id": "sable",
+      "source_system": "call",
+      "source_date": "2026-10-20",
+      "speaker": "Omar Haddad",
+      "text": "Personal remark about family plans (excluded by the privacy filter).",
+      "is_personal": true
+    },
+    {
+      "evidence_id": "EV-EML-0299",
+      "account_id": "sable",
+      "source_system": "email",
+      "source_date": "2026-11-05",
+      "speaker": "Sable Energy legal",
+      "text": "Redlines attached on sections 4 and 9.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0402",
+      "account_id": "juniper",
+      "source_system": "call",
+      "source_date": "2026-10-09",
+      "speaker": "Ruth Adeyemi, Principal",
+      "text": "It's just me and our office manager using it.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-CALL-0433",
+      "account_id": "corvid",
+      "source_system": "call",
+      "source_date": "2026-10-29",
+      "speaker": "Sam Ito, CFO",
+      "text": "If you can do a two-year term, we can talk price.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-001",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "11 enterprise wins, 2024 to 2026",
+      "text": "In 9 of 11 wins the security review closed before the first pricing call.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-002",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "38 discovery calls",
+      "text": "Asked who signs by the second meeting in 31 of 38 deals.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-003",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "1,204 customer emails",
+      "text": "Median reply time 3.1 business hours.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-004",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "11 enterprise wins",
+      "text": "Average of 6 engaged contacts per won enterprise deal.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-005",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "212 calls",
+      "text": "Written recap with dated next steps sent within 24 hours after 94% of calls.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-006",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "17 discounted deals",
+      "text": "14 of 17 discounts traded for a multi-year term or a case study.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-007",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "38 discovery calls",
+      "text": "Talk ratio 38% on discovery calls.",
+      "is_personal": false
+    },
+    {
+      "evidence_id": "EV-PAT-008",
+      "account_id": null,
+      "source_system": "pattern",
+      "source_date": "2026-11-01",
+      "speaker": "6 quarter-end deals",
+      "text": "10% discount on 6 deals closed in the last week of a quarter.",
+      "is_personal": false
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F-001",
+      "account_id": "halcyon",
+      "fact_type": "commitment",
+      "fact_key": null,
+      "text": "30-day pilot extension, through Nov 30",
+      "evidence_id": "EV-EML-0193",
+      "due_date": "2026-11-30"
+    },
+    {
+      "fact_id": "F-002",
+      "account_id": "halcyon",
+      "fact_type": "risk",
+      "fact_key": null,
+      "text": "Security review open: questionnaire items 7 and 12",
+      "evidence_id": "EV-CRM-0057",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-003",
+      "account_id": "brightwater",
+      "fact_type": "fact",
+      "fact_key": "budget_status",
+      "text": "Budget request submitted to finance on Oct 30",
+      "evidence_id": "EV-EML-0310",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-004",
+      "account_id": "brightwater",
+      "fact_type": "risk",
+      "fact_key": null,
+      "text": "Budget not yet approved; finance review takes two to three weeks",
+      "evidence_id": "EV-EML-0310",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-005",
+      "account_id": "orchard",
+      "fact_type": "risk",
+      "fact_key": null,
+      "text": "Champion may have left: email bounced on Nov 4",
+      "evidence_id": "EV-EML-0118",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-006",
+      "account_id": "pinecrest",
+      "fact_type": "risk",
+      "fact_key": null,
+      "text": "Do not contact until Jan 15, 2027 (audit)",
+      "evidence_id": "EV-CRM-0140",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-007",
+      "account_id": "lumen",
+      "fact_type": "commitment",
+      "fact_key": null,
+      "text": "QBR deck with uptime numbers by Dec 1",
+      "evidence_id": "EV-EML-0350",
+      "due_date": "2026-12-01"
+    },
+    {
+      "fact_id": "F-008",
+      "account_id": "lumen",
+      "fact_type": "fact",
+      "fact_key": "usage",
+      "text": "92% of licensed seats active in the last 30 days",
+      "evidence_id": "EV-CRM-0211",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-009",
+      "account_id": "tidewater",
+      "fact_type": "fact",
+      "fact_key": "lead_source",
+      "text": "Inbound lead asking for a routing demo",
+      "evidence_id": "EV-CRM-0230",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-010",
+      "account_id": "marlow",
+      "fact_type": "fact",
+      "fact_key": "budget_timing",
+      "text": "Budget lands in Q1",
+      "evidence_id": "EV-EML-0277",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-011",
+      "account_id": "marlow",
+      "fact_type": "fact",
+      "fact_key": "budget_timing",
+      "text": "Q2 funds now",
+      "evidence_id": "EV-CALL-0451",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-012",
+      "account_id": "sable",
+      "fact_type": "risk",
+      "fact_key": null,
+      "text": "Legal redlines open on sections 4 and 9",
+      "evidence_id": "EV-EML-0299",
+      "due_date": null
+    },
+    {
+      "fact_id": "F-013",
+      "account_id": "sable",
+      "fact_type": "fact",
+      "fact_key": "personal",
+      "text": "Family plans mentioned on the Oct 20 call",
+      "evidence_id": "EV-CALL-0471",
+      "due_date": null
+    }
+  ],
+  "seller_notes": [
+    {
+      "note_id": "N-001",
+      "account_id": "brightwater",
+      "text": "Champion has approved budget",
+      "evidence_id": null
+    }
+  ],
+  "pattern_steps": [
+    {
+      "step_id": "PS-01",
+      "text": "Clear the security review before any pricing call",
+      "segments": [
+        "Enterprise"
+      ],
+      "min_stage_order": 3,
+      "evidence_id": "EV-PAT-001",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-02",
+      "text": "Ask who signs by the second meeting",
+      "segments": [
+        "Enterprise",
+        "Mid-market",
+        "SMB"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-002",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-03",
+      "text": "Reply to customer emails within 4 business hours",
+      "segments": [
+        "Enterprise",
+        "Mid-market",
+        "SMB"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-003",
+      "status": "approved",
+      "note": "Maya edited this from 2 hours to 4."
+    },
+    {
+      "step_id": "PS-04",
+      "text": "Multi-thread to five or more contacts",
+      "segments": [
+        "Enterprise"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-004",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-05",
+      "text": "Send a written recap with dated next steps within 24 hours",
+      "segments": [
+        "Enterprise",
+        "Mid-market",
+        "SMB"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-005",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-06",
+      "text": "Trade any discount for a multi-year term or a case study",
+      "segments": [
+        "Enterprise",
+        "Mid-market"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-006",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-07",
+      "text": "Let the customer talk: aim for a talk ratio under 40% on discovery",
+      "segments": [
+        "Enterprise",
+        "Mid-market",
+        "SMB"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-007",
+      "status": "approved",
+      "note": null
+    },
+    {
+      "step_id": "PS-08",
+      "text": "Discount 10% in the last week of the quarter",
+      "segments": [
+        "Enterprise",
+        "Mid-market",
+        "SMB"
+      ],
+      "min_stage_order": 0,
+      "evidence_id": "EV-PAT-008",
+      "status": "rejected",
+      "note": "Maya rejected it: \"It happened, but it isn't a practice I'd teach.\""
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "T-001",
+      "account_id": "halcyon",
+      "text": "Book 30 minutes with Ana Cole to close questionnaire items 7 and 12",
+      "evidence_id": "EV-CRM-0057",
+      "pattern_step_id": "PS-01",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-002",
+      "account_id": "halcyon",
+      "text": "Confirm the pilot extension in writing to Tom Reyes",
+      "evidence_id": "EV-EML-0193",
+      "pattern_step_id": "PS-05",
+      "is_outreach": true,
+      "sort_order": 2
+    },
+    {
+      "task_id": "T-003",
+      "account_id": "halcyon",
+      "text": "Once security clears, hold the pricing call with Priya Nair and lead with cost per shipment",
+      "evidence_id": "EV-CALL-0412",
+      "pattern_step_id": "PS-02",
+      "is_outreach": true,
+      "sort_order": 3
+    },
+    {
+      "task_id": "T-004",
+      "account_id": "brightwater",
+      "text": "Ask Lena Ortiz for the finance review date and who presents it",
+      "evidence_id": "EV-EML-0310",
+      "pattern_step_id": "PS-02",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-005",
+      "account_id": "orchard",
+      "text": "Re-verify the champion: check the company site and ask the account admin who now owns eCommerce",
+      "evidence_id": "EV-EML-0118",
+      "pattern_step_id": null,
+      "is_outreach": false,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-006",
+      "account_id": "pinecrest",
+      "text": "Send the renewal quote to Grace Whitman",
+      "evidence_id": "EV-EML-0422",
+      "pattern_step_id": null,
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-007",
+      "account_id": "pinecrest",
+      "text": "Schedule the renewal kickoff call",
+      "evidence_id": "EV-CRM-0140",
+      "pattern_step_id": null,
+      "is_outreach": true,
+      "sort_order": 2
+    },
+    {
+      "task_id": "T-008",
+      "account_id": "lumen",
+      "text": "Build the QBR deck around uptime and send it by Dec 1",
+      "evidence_id": "EV-EML-0350",
+      "pattern_step_id": "PS-05",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-009",
+      "account_id": "lumen",
+      "text": "Book the renewal call with Jae Park for the week of Dec 7",
+      "evidence_id": "EV-CALL-0388",
+      "pattern_step_id": null,
+      "is_outreach": true,
+      "sort_order": 2
+    },
+    {
+      "task_id": "T-010",
+      "account_id": "tidewater",
+      "text": "Run discovery and ask who signs by the second meeting",
+      "evidence_id": "EV-PAT-002",
+      "pattern_step_id": "PS-02",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-011",
+      "account_id": "marlow",
+      "text": "Ask Karen Liu to confirm whether funds land in Q1 or Q2",
+      "evidence_id": "EV-CALL-0451",
+      "pattern_step_id": null,
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-012",
+      "account_id": "sable",
+      "text": "Get legal answers on sections 4 and 9 back within the week",
+      "evidence_id": "EV-EML-0299",
+      "pattern_step_id": "PS-03",
+      "is_outreach": false,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-013",
+      "account_id": "juniper",
+      "text": "Send a 2-seat proposal with a short recap of the Oct 9 call",
+      "evidence_id": "EV-CALL-0402",
+      "pattern_step_id": "PS-05",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-014",
+      "account_id": "juniper",
+      "text": "Add four more contacts to the deal",
+      "evidence_id": "EV-PAT-004",
+      "pattern_step_id": "PS-04",
+      "is_outreach": true,
+      "sort_order": 2
+    },
+    {
+      "task_id": "T-015",
+      "account_id": "corvid",
+      "text": "Offer pricing tied to a two-year term",
+      "evidence_id": "EV-CALL-0433",
+      "pattern_step_id": "PS-06",
+      "is_outreach": true,
+      "sort_order": 1
+    },
+    {
+      "task_id": "T-016",
+      "account_id": "corvid",
+      "text": "Offer a 10% quarter-end discount",
+      "evidence_id": "EV-PAT-008",
+      "pattern_step_id": "PS-08",
+      "is_outreach": true,
+      "sort_order": 2
+    }
+  ],
+  "stage_order": {
+    "Discovery": 0,
+    "Evaluation": 1,
+    "Proposal": 2,
+    "Negotiation": 3,
+    "Renewal": 3
+  }
+}

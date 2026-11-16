@@ -1,0 +1,38 @@
+{
+  "name": "saleslore",
+  "version": "1.0.0",
+  "description": "SalesLore: your best sellers' knowledge. Never lost. Evidence-backed account knowledge transfer for sales teams (prototype, fictional data).",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "offline": "node src/index.js --offline",
+    "offline:noslack": "node src/index.js --offline --no-slack",
+    "test": "node --test \"test/*.test.js\"",
+    "build:fixtures": "node scripts/build-fixtures.mjs",
+    "generate:data": "python3 data/generate_data.py",
+    "db:setup": "node scripts/db-setup.mjs",
+    "sf:seed": "sf apex run --file salesforce/seed.apex --target-org saleslore",
+    "sf:export": "node scripts/sf-export.mjs",
+    "sf:sync": "node scripts/build-sync-sql.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^4.4.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.7"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Hitha Kishore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hithakishore-all/saleslore.git"
+  }
+}
