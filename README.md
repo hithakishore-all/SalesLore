@@ -4,9 +4,9 @@
 
 SalesLore is institutional memory for sales teams. When a top account executive leaves, SalesLore keeps what they knew about each account (who really decides, what was promised, what to watch for) and how they worked (what they checked first, how they sequenced a deal). It turns that into a cited brief for the next seller, a manager approves it, and the successor gets help in Slack. Every claim links back to the call, email or CRM field it came from. Nothing is ever sent to a customer.
 
-[![Watch the 3-minute walkthrough](docs/video/saleslore-walkthrough-poster.jpg)](docs/video/saleslore-walkthrough.mp4)
+[![Watch the 3-minute walkthrough](docs/video/saleslore-walkthrough-poster.jpg)](https://www.loom.com/share/0696e48a8df249aa870a990e4ae0524e)
 
-▶ **[Watch the 3-minute captioned walkthrough](docs/video/saleslore-walkthrough.mp4)** (no sound, recorded from the real app with fictional data)
+▶ **[Watch the 3-minute walkthrough on Loom](https://www.loom.com/share/0696e48a8df249aa870a990e4ae0524e)** (no sound, recorded from the real app with fictional data) · [MP4 in this repo](docs/video/saleslore-walkthrough.mp4)
 
 > **All data in this repository is fictional.** Kestrel Cloud, every account, person, quote and number is synthetic. Emails use the reserved `.example` domain. This is a portfolio prototype, not a commercial product.
 
