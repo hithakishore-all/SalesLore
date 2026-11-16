@@ -13,7 +13,10 @@
     "db:setup": "node scripts/db-setup.mjs",
     "sf:seed": "sf apex run --file salesforce/seed.apex --target-org saleslore",
     "sf:export": "node scripts/sf-export.mjs",
-    "sf:sync": "node scripts/build-sync-sql.mjs"
+    "sf:sync": "node scripts/build-sync-sql.mjs",
+    "video:record": "python3 scripts/video/record.py",
+    "video:encode": "python3 scripts/video/encode.py",
+    "video": "python3 scripts/video/record.py && python3 scripts/video/encode.py"
   },
   "license": "MIT",
   "dependencies": {

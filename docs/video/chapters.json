@@ -1,0 +1,128 @@
+[
+ {
+  "t": 0.01,
+  "step": 0,
+  "who": "",
+  "color": "#FFB627",
+  "title": "Title"
+ },
+ {
+  "t": 6.12,
+  "step": 1,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "Maya's book moves to Leo"
+ },
+ {
+  "t": 11.47,
+  "step": 2,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "Readiness for every account"
+ },
+ {
+  "t": 21.72,
+  "step": 3,
+  "who": "Maya",
+  "color": "#FFB627",
+  "title": "Maya approved how she works"
+ },
+ {
+  "t": 27.06,
+  "step": 4,
+  "who": "Maya",
+  "color": "#FFB627",
+  "title": "Her rejected step is never coached"
+ },
+ {
+  "t": 38.83,
+  "step": 5,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "Agents draft a cited brief"
+ },
+ {
+  "t": 44.58,
+  "step": 6,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "It rejects an uncited claim"
+ },
+ {
+  "t": 50.41,
+  "step": 7,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "Only the owner approves"
+ },
+ {
+  "t": 65.18,
+  "step": 8,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "Leo can't approve his own brief"
+ },
+ {
+  "t": 76.04,
+  "step": 9,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "It stops when the customer says stop"
+ },
+ {
+  "t": 91.66,
+  "step": 10,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "Leo inherits a dossier, not a CRM dump"
+ },
+ {
+  "t": 96.99,
+  "step": 11,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "Every claim has a receipt"
+ },
+ {
+  "t": 111.18,
+  "step": 12,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "The context graph behind it"
+ },
+ {
+  "t": 123.94,
+  "step": 13,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "Unknown stays unknown"
+ },
+ {
+  "t": 131.8,
+  "step": 14,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "Ask in Slack, get receipts"
+ },
+ {
+  "t": 139.22,
+  "step": 15,
+  "who": "Leo",
+  "color": "#7DB4FF",
+  "title": "The stop rule holds in Slack too"
+ },
+ {
+  "t": 150.98,
+  "step": 16,
+  "who": "Dana",
+  "color": "#3FCB97",
+  "title": "Every step is on the record"
+ },
+ {
+  "t": 157.31,
+  "step": 0,
+  "who": "",
+  "color": "#FFB627",
+  "title": "Try it yourself"
+ }
+]

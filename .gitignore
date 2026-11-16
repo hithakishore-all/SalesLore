@@ -8,3 +8,4 @@ db/sql/06_sync.sql
 *.log
 .DS_Store
 coverage/
+build/

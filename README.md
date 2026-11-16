@@ -4,7 +4,9 @@
 
 SalesLore is institutional memory for sales teams. When a top account executive leaves, SalesLore keeps what they knew about each account (who really decides, what was promised, what to watch for) and how they worked (what they checked first, how they sequenced a deal). It turns that into a cited brief for the next seller, a manager approves it, and the successor gets help in Slack. Every claim links back to the call, email or CRM field it came from. Nothing is ever sent to a customer.
 
-![SalesLore account brief with a receipt opened](docs/screenshots/account-memory.png)
+[![Watch the 3-minute walkthrough](docs/video/saleslore-walkthrough-poster.jpg)](docs/video/saleslore-walkthrough.mp4)
+
+▶ **[Watch the 3-minute captioned walkthrough](docs/video/saleslore-walkthrough.mp4)** (no sound, recorded from the real app with fictional data)
 
 > **All data in this repository is fictional.** Kestrel Cloud, every account, person, quote and number is synthetic. Emails use the reserved `.example` domain. This is a portfolio prototype, not a commercial product.
 
@@ -21,6 +23,7 @@ SalesLore is institutional memory for sales teams. When a top account executive 
 - [Full setup](#full-setup)
 - [Configuration](#configuration)
 - [HTTP API](#http-api)
+- [Re-recording the walkthrough video](#re-recording-the-walkthrough-video)
 - [Testing](#testing)
 - [Project layout](#project-layout)
 - [Security and data handling](#security-and-data-handling)
@@ -248,6 +251,10 @@ All routes return JSON. Send `X-SalesLore-User: dana` (or `leo`, `maya`) to act 
 
 Bad input returns 400 with a message that says what to send; unknown records return 404.
 
+## Re-recording the walkthrough video
+
+`npm run video` starts the app offline, drives it with a visible cursor, captions and highlights (`scripts/video/record.py` and `overlay.js`), then encodes `docs/video/saleslore-walkthrough.mp4` with chapters (`scripts/video/encode.py`). It needs Python Playwright with Chromium and ffmpeg. Set `CHROME=/path/to/chrome` to use an installed Chrome.
+
 ## Testing
 
 ```bash
@@ -287,7 +294,7 @@ saleslore/
 │   └── store/                  live (Postgres) and offline (snapshot) stores
 ├── public/                     web console (HTML, JS, icon)
 ├── test/                       end-to-end and unit tests
-├── docs/                       setup guides, architecture, troubleshooting, screenshots, brand
+├── docs/                       setup guides, architecture, troubleshooting, screenshots, brand, video
 ├── slack-manifest.yml          create the Slack app from this
 └── .env.example                configuration template
 ```
