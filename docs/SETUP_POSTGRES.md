@@ -2,6 +2,8 @@
 
 Postgres holds the raw data, the context graph, the governed views, runs, approvals and the audit log. It is free and runs on your laptop. Allow about 10 minutes.
 
+> **Mac shortcut:** if Postgres is already installed (official installer, Postgres.app or Homebrew), double-click `scripts/setup-mac.command` in Finder. It finds Postgres, creates the database, writes `.env`, loads all data, checks the counts and starts SalesLore. It asks only for your Postgres password and never saves it. If macOS warns about the file, right-click it and choose **Open**.
+
 ## 1. Install Postgres
 
 **Mac (easiest): Postgres.app**

@@ -191,6 +191,8 @@ The governed view is the product's core, so other front ends can sit on top of i
 | 2. Slack (optional) | [docs/SETUP_SLACK.md](docs/SETUP_SLACK.md) | 10 minutes |
 | 3. Salesforce (optional) | [docs/SETUP_SALESFORCE.md](docs/SETUP_SALESFORCE.md) | 15 minutes |
 
+**Easiest on a Mac:** with Postgres installed, double-click `scripts/setup-mac.command` in Finder. It does every step below and starts SalesLore.
+
 Short version on a Mac with [Postgres.app](https://postgresapp.com):
 
 ```bash
@@ -273,7 +275,7 @@ saleslore/
 │   └── 07_app_role.sql         least-privilege saleslore_app user
 ├── salesforce/seed.apex        generated anonymous Apex for a Developer Edition org
 ├── fixtures/snapshot.json      offline data, built from the SQL by scripts/build-fixtures.mjs
-├── scripts/                    db-setup, build-fixtures, sf-export, build-sync-sql
+├── scripts/                    setup-mac.command, db-setup, build-fixtures, sf-export, build-sync-sql
 ├── src/
 │   ├── index.js                entry point, config checks, clean shutdown
 │   ├── config.js               environment and checks
