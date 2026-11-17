@@ -334,4 +334,4 @@ More in [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
 
 ## License
 
-[MIT](LICENSE) © 2026 Hitha Kishore
+[Apache 2.0](LICENSE) © 2026 Hitha Kishore

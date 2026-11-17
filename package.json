@@ -18,7 +18,7 @@
     "video:encode": "python3 scripts/video/encode.py",
     "video": "python3 scripts/video/record.py && python3 scripts/video/encode.py"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "@slack/bolt": "^4.4.0",
     "dotenv": "^16.6.1",
